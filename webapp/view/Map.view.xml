@@ -1,0 +1,8 @@
+<mvc:View
+controllerName="com.emp.module.zempmod1401.controller.Map"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <core:HTML afterRendering="onRenderMap" content="&lt;div id=&quot;map&quot;&gt;&lt;/div&gt;">
+    </core:HTML>
+</mvc:View>

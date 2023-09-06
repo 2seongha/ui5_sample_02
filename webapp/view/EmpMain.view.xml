@@ -1,0 +1,59 @@
+<mvc:View
+    xmlns:t="sap.ui.table"
+    controllerName="com.emp.module.zempmod1401.controller.EmpMain"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <FlexBox
+                justifyContent="SpaceBetween"
+                class="myFlex"
+                height="100%"
+            >
+                <Table
+                    items="{/Emp14_01Set}"
+                    headerText="Employee List"
+                >
+                    <columns>
+                        <Column width="auto">
+                            <Text text="Company" />
+                        </Column>
+                        <Column width="auto">
+                            <Text text="EmpNo" />
+                        </Column>
+                        <Column width="auto">
+                            <Text text="EmpName" />
+                        </Column>
+                        <Column width="auto">
+                            <Text text="Address" />
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem
+                            type="Navigation"
+                            press="onPress"
+                        >
+                            <cells>
+                                <Text
+                                    text="{Company}"
+                                    class="customText"
+                                />
+                                <Text text="{Emp_No}" />
+                                <Text text="{Emp_Name}" />
+                                <Text text="{Address}" />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+                <mvc:XMLView
+                    viewName="com.emp.module.zempmod1401.view.Detail"
+                />
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>

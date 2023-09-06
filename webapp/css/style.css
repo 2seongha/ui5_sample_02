@@ -1,0 +1,84 @@
+/* Enter your custom styles here */
+#map {
+  height: 100%;
+  border-radius: 15px;
+}
+
+.customText {
+  color: rgb(190, 171, 73);
+}
+
+.myFlex>.sapMFlexItem {
+  flex-basis: 49.5% !important;
+}
+
+.myFlex > .sapMFlexItem > .sapUiView {
+  height: 100%;
+}
+
+.myMapFlex {
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
+  flex-basis: 50% !important;
+}
+
+.myMapFlex > div:first-child{
+  flex-basis: 40% !important;
+}
+
+.myMapFlex > div:last-child{
+  flex-basis: 60% !important;
+  height: 100%;
+}
+
+.myMapFlex > div:last-child *{
+  height: 100%;
+  
+}
+
+.myDetailFlex>.sapMFlexItem {
+  width: 50%;
+}
+
+.myDetailFlex .sapMOHBgTransparent .sapMOHBottomRow {
+  font-size: 1.5rem;
+}
+
+.myDetailFlex .sapMOHAttr {
+  width: auto !important;
+  border-bottom: 0.05rem solid darkgrey;
+  padding: 0 3rem 0 1rem;
+}
+
+.myCustomDetailText {
+  height: auto;
+  display: inline !important;
+}
+
+.myCustomDetailText bdi {
+  font-size: 1rem;
+}
+
+.myCustomDetailText>span:first-child>bdi {
+  font-weight: 900;
+  color: rgb(19, 14, 86);
+  margin-right: 1.5rem;
+}
+
+.myDetailFlex .sapMObjectAttributeColon {
+  visibility: hidden;
+}
+
+.myDetailFlex .sapMImg {
+  padding-top: 2rem;
+}
+
+.myDetailFlex .sapMOH {
+  padding: 1rem 0 0 0;
+}
+
+.myDetailFlex>.sapMFlexItem:first-child {
+  display: flex;
+  justify-content: center;
+}

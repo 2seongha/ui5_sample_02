@@ -1,0 +1,53 @@
+<mvc:View
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <FlexBox
+        justifyContent="Center"
+        class="myMapFlex"
+        direction="Column"
+    >
+        <FlexBox
+            justifyContent="Center"
+            class="myDetailFlex"
+        >
+            <Image
+                src="{imageurl>/url}"
+                width="50%"
+                height="75%"
+                id="profileImg"
+            />
+            <ObjectHeader>
+                <attributes>
+                    <ObjectAttribute
+                        title="회사"
+                        text="{detail>/Company}"
+                        class="myCustomDetailText"
+                    />
+                    <ObjectAttribute
+                        title="번호"
+                        text="{detail>/Emp_No}"
+                        class="myCustomDetailText"
+                    />
+                    <ObjectAttribute
+                        title="이름"
+                        text="{detail>/Emp_Name}"
+                        class="myCustomDetailText"
+                    />
+                    <ObjectAttribute
+                        title="주소"
+                        text="{detail>/Address}"
+                        class="myCustomDetailText"
+                    />
+                    <ObjectAttribute
+                        title="부서"
+                        text="{detail>/Depart}"
+                        class="myCustomDetailText"
+                    />
+                </attributes>
+            </ObjectHeader>
+        </FlexBox>
+        <mvc:XMLView viewName="com.emp.module.zempmod1401.view.Map" />
+    </FlexBox>
+</mvc:View>
