@@ -11,7 +11,7 @@ sap.ui.define([
 
         return Controller.extend("com.emp.module.zempmod1401.controller.EmpMain", {
             onInit: function () {
-                this.getView().bindElement("/Emp14_02Set"); //dd
+                this.getView().bindElement("/Emp14_02Set"); //ddd
             },
             onPress: function (oEvent) {
                 var oItem = oEvent.getSource()
